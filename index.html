@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.I Alinhamento e Balanceamento - Especialistas em Alinhamento e Balanceamento de Caminhões</title>
+    <meta name="description" content="Serviços profissionais de alinhamento e balanceamento para caminhões e ônibus e veículos pesados. Melhore a segurança e reduza o desgaste dos pneus.">
+    <meta name="keywords" content="alinhamento de caminhões, balanceamento eixos dianteiros">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "S.I Alinhamento",
+        "image": "https://www.sialinhamento.com.br/logo.jpg",
+        "@id": "",
+        "url": "https://www.sialinhamento.com.br",
+        "telephone": "+55 (48)99931-8796",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "BR-101, km337",
+            "addressLocality": "Bairro Morrotes",
+            "addressRegion": "SC",
+            "postalCode": "88704-801",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -28.4783862,
+            "longitude": -49.0317786,21z
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        } 
+    }
+    </script>
+    <style>
+        :root {
+            --primary: #000000;
+            --secondary: #0471b9;
+            --light: #ecf0f1;
+            --dark: #1a252f;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('s.i.png');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.2rem;
+            color: var(--primary);
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background-color: var(--light);
+            padding: 2rem;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card i {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .about {
+            background-color: var(--light);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        .contact {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        /* Blog Styles */
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .blog-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .blog-content {
+            padding: 1.5rem;
+        }
+        
+        .blog-content h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        
+        .read-more {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            height: 200px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* Customer Area Styles */
+        .customer-area {
+            background-color: var(--light);
+        }
+        
+        .customer-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .customer-feature {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .customer-feature i {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        /* Map Container */
+        .map-container {
+            height: 400px;
+            margin-top: 2rem;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        /* Schedule Form */
+        .schedule-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">S.I<span>Alinhamento</span></a>
+                <ul class="nav-links">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#cliente">Área do Cliente</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Alinhamento e Balanceamento Profissional para Caminhões</h1>
+            <p>Proteja seu investimento, aumente a segurança e reduza custos com manutenção com nossos serviços especializados para veículos pesados.</p>
+            <a href="#agendamento" class="btn">Agende Seu Serviço Online</a>
+        </div>
+    </section>
+    
+    <section id="servicos" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services">
+                <div class="service-card">
+                    <i class="fas fa-truck-monster"></i>
+                    <h3>Alinhamento de Caminhões</h3>
+                    <p>Alinhamento preciso de eixos dianteiro e traseiro com equipamentos tecnologicos.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Balanceamento de Rodas</h3>
+                    <p>Balanceamento estático e dinâmico para todos os tipos de rodas de caminhões.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-content">
+                <div>
+                    <h3>Especialistas em Veículos Pesados</h3>
+                    <p>Com mais de 5 anos de experiência no mercado, a S.I Alinhamento se consolidou como referência em serviços de alinhamento e balanceamento para caminhões na cidade e proximidades de Tubarão. Nossa equipe altamente qualificada e equipamentos tecnologicos garantem um serviço preciso e confiável.</p>
+                    <p>Entendemos que seu caminhão é seu meio de vida, por isso nos comprometemos a oferecer o melhor serviço para manter seu veículo seguro e com desempenho máximo na estrada.</p>
+                </div>
+                <img src="foto.png" alt="Nossa equipe trabalhando" class="about-img">
+            </div>
+        </div>
+    </section>
+    
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Blog e Dicas</h2>
+            <div class="blog-posts">
+                <article class="blog-card">
+                    <img src="penus.jpg" alt="Caminhão com problemas de alinhamento">
+                    <div class="blog-content">
+                        <h3>Sinais de que seu caminhão precisa de alinhamento</h3>
+                        <p>Descubra os principais sinais que indicam quando seu caminhão precisa de um alinhamento para evitar desgaste prematuro dos pneus e problemas de direção.</p>
+                        <a href="https://www.portaldotransito.com.br/noticias/mobilidade-e-tecnologia/seguranca/como-saber-quando-e-a-hora-de-fazer-o-alinhamento-do-veiculo/" class="read-more">Leia mais →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <img src="pneuirregular.jpg" alt="Pneus com desgaste irregular">
+                    <div class="blog-content">
+                        <h3>Como o balanceamento correto prolonga a vida dos pneus</h3>
+                        <p>Entenda como um balanceamento profissional pode economizar milhares de reais em pneus ao longo do tempo e melhorar a segurança nas estradas.</p>
+                        <a href="https://www.bestenpneus.com.br/blog/balanceamento-dos-pneus-evite-um-desgaste-rapido" class="read-more">Leia mais →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <img src="levexpesado.jpg" alt="Comparação entre veículos leves e pesados">
+                    <div class="blog-content">
+                        <h3>Diferenças entre alinhamento para veículos leves e pesados</h3>
+                        <p>Conheça as principais diferenças técnicas nos processos de alinhamento para veículos leves e pesados e por que você precisa de um especialista para seu caminhão.</p>
+                        <a href="https://blog.tecnodux.com.br/entenda-a-tecnologia-por-tras-do-alinhamento-de-caminhoes-e-carros/" class="read-more">Leia mais →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Nossa Oficina em Ação</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="aparelho.png" alt="Equipamento profissional para alinhamento">
+                </div>
+                <div class="gallery-item">
+                    <img src="tecnico.png" alt="Técnico realizando alinhamento">
+                </div>
+                <div class="gallery-item">
+                    <img src="antes x depos.jpg" alt="Resultado antes e depois do alinhamento">
+                </div>
+                <div class="gallery-item">
+                    <img src="visaogeral.png" alt="Vista geral da nossa oficina">
+                </div>
+                <div class="gallery-item">
+                    <img src="balanceamento.png" alt="Máquina de balanceamento profissional">
+                </div>
+                <div class="gallery-item">
+                    <img src="equipetop.png" alt="Nossa equipe especializada">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cliente" class="customer-area">
+        <div class="container">
+            <h2 class="section-title">Área do Cliente</h2>
+        </div>
+        
+        <div id="agendamento" class="schedule-form">
+            <h3>Agende Seu Serviço Online</h3>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ag-nome">Nome Completo</label>
+                        <input type="text" id="ag-nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ag-email">E-mail</label>
+                        <input type="email" id="ag-email" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ag-telefone">Telefone</label>
+                        <input type="tel" id="ag-telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ag-veiculo">Tipo de Veículo</label>
+                        <select id="ag-veiculo" required>
+                            <option value="">Selecione...</option>
+                            <option value="caminhao">Caminhão</option>
+                            <option value="onibus">Ônibus</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ag-servico">Serviço Desejado</label>
+                    <select id="ag-servico" required>
+                        <option value="">Selecione...</option>
+                        <option value="alinhamento">Alinhamento</option>
+                        <option value="balanceamento">Balanceamento</option>
+                        <option value="alinhamento-balanceamento">Alinhamento + Balanceamento</option>
+                        <option value="outro">Outro Serviço</option>
+                    </select>
+                    <label for="ag-observacoes">Observações</label>
+                    <textarea id="ag-observacoes" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Confirmar Agendamento</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.0355372845393!2d-49.031709!3d-28.4784764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952143f76e5d3de9%3A0x1440fba0c408603f!2sS.i%20alinhamentos%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1743476077069!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>S.I Alinhamento © 2019 - Todos os direitos reservados</p>
+            <p>Endereço: BR-101, km 337 - Morrotes - Tubarão/SC</p>
+            <p>Telefone: (48) 99931-8796 | WhatsApp: (48) 99931-8796</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/sialinhamento/"><i class="fab fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5548999318796&text=Ol%C3%A1%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+alinhamento+de+caminh%C3%B5es&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/5548999318796?text=Olá,%20gostaria%20de%20informações%20sobre%20alinhamento%20de%20caminhões" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script>
+        // Script para o funcionamento do agendamento online
+        document.addEventListener('DOMContentLoaded', function() {
+            // Aqui viria o código para integrar com o sistema de agendamento
+            // Poderia ser uma integração com Google Calendar, Calendly ou sistema próprio
+            
+            // Exemplo simples de validação
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                    form.reset();
+                });
+            });
+            
+            // Atualizar o ano do copyright automaticamente
+            document.querySelector('footer p').textContent = `S.I Alinhamento © ${new Date().getFullYear()} - Todos os direitos reservados`;
+        });
+    </script>
+</body>
+</html>
