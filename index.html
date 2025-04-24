@@ -577,26 +577,7 @@
     <a href="https://wa.me/5548999318796?text=Olá,%20gostaria%20de%20informações%20sobre%20alinhamento%20de%20caminhões" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-    
-    <script>
-        // Script para o funcionamento do agendamento online
-        document.addEventListener('DOMContentLoaded', function() {
-            // Aqui viria o código para integrar com o sistema de agendamento
-            // Poderia ser uma integração com Google Calendar, Calendly ou sistema próprio
-            
-            // Exemplo simples de validação
-            const forms = document.querySelectorAll('form');
-            forms.forEach(form => {
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-                    form.reset();
-                });
-            });
-            
-            // Atualizar o ano do copyright automaticamente
-            document.querySelector('footer p').textContent = `S.I Alinhamento © ${new Date().getFullYear()} - Todos os direitos reservados`;
-        });
-    </script>
+    <script src="script.js"></script>
+
 </body>
 </html>
